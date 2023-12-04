@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* prepare */
+html{
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+section{
+    min-height: 100vh;
+    padding: 2rem 4rem 3rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    transition: all 0.5s ease-in-out;
+
+}
+
+header.active {
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);}
+
+.logo1{
+    width: 5vw;
+}
+
+nav{
+    display: flex;
+}
+
+.navv{
+    font-size: 16px;
+    background-color: #2D2D2D;
+    padding: 12px 30px;
+    border-radius: 7px;
+    margin-right: 6px;
+}
+
+.navv a:hover{
+    text-decoration: underline;
+    color: #62D6EF;
+}
+
+.navv a{
+    color: white;
+    margin: 6px;
+    
+}
+
+.btn{
+    font-size: 16px;
+    background-color: white;
+    color: #2D2D2D;
+    padding: 12px 30px;
+    border-radius: 7px;
+    border: solid #2D2D2D 2px;
+    font-weight: 800;
+    transition: .5s ease;
+}
+
+/* home */
+
+#about{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 1200px;
+    padding: 40px 0 40px 0;
+}
+
+#home{
+    width: 100%;
+    height: calc(100vh);
+    background: url(https://images.unsplash.com/photo-1559554498-dfe2798aa518?q=80&w=2785&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.desc{
+    color: white;
+    text-align: right;
+    margin-right: 84px;
+    display: inline-block;
+}
+
+.desc h1{
+    font-family: 'Do Hyeon', 'sans-serif';
+    font-size: 50px;
+
+    /* typing effect */
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 2s steps(50),
+    cursor .4s step-end infinite alternate;  
+}
+
+/* kursor blinking */
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+/* typing effect */
+@keyframes typing {
+    from {width: 0}
+    
+}
+.desc p{
+    font: 20px;
+    margin-bottom: 2rem;
+    width: 532px;
+}
+
+span{
+    font-weight: 800;
+}
+
+.hero-back img{
+    position: absolute;
+    top: 10rem;
+    left: -6rem;
+}
+
+/* About */
+#about{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.gambar{
+    margin-right: 6rem;
+}
+
+.text{
+    width: 568px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn2{
+    font-size: 16px;
+    background-color: white;
+    color: #62D6EF;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: solid #62D6EF 2px;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.text p{
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.gambar img{
+    margin-top: 30px;
+}
+
+/* Learnmore */
+
+#learnmore{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 37px;
+    margin-top: 10rem;
+}
+
+.container-lm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 2rem;
+    
+}
+
+.card{
+    background-color: white;
+    width: 350px;
+    background: none;
+    border: 2px solid #2D2D2D;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    padding-bottom: .6rem;
+    transition: .5s ease;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.top i{
+    font-size: 2rem;
+}
+
+.card img{
+    width: 23vw;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 7px #62D6EF;
+}
+
+/* Plastik */
+
+.plastik{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.text2{
+    text-align: right;
+}
+
+.text2 h1{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.text2 p{
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+/* Tree */
+
+.pohon{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.pohon-div{
+    background-image: url("https://images.unsplash.com/photo-1488330890490-c291ecf62571?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 100%;
+    height: 331px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.text3{
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.text3 p{
+    margin-bottom: 2rem;
+    font-size: 20px;
+    width: 710px;
+}
+
+.text3 h1{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50px;
+}
+
+.text3 .btn2{
+    background-color: transparent;
+}
+
+/* Product */
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text4{
+    margin-right: 3rem;
+}
+
+.text4 p{
+    margin-bottom: 2rem;
+}
+
+.photo-gallery{
+    display: flex;
+    gap: 20px;
+}
+
+.column{
+    columns: 3;
+    column-gap: 20px;
+    align-items: center;
+    break-inside: avoid;
+}
+
+.photo{
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 32px;
+    border-radius: 7px;
+    border: #2D2D2D solid;
+    transition: .5s ease;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo .ngok{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffffff00, #62d5efb5);
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.photo:hover{
+    box-shadow: 10px 10px #2D2D2D;
+}
+
+.photo:hover .ngok{
+    transform: translateY(0);
+}
+
+.photo:hover img{
+    opacity: 30%;
+}
+
+.ngok h4{
+    font-size: 23px;
+    text-align: left;
+}
+
+.ngok p{
+    font-size: 20px;
+    margin: .3 0 1rem;
+    text-align: left;
+}
+
+.ngok .btn{
+    margin-top: 1rem;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.ngok i{
+    font-size: 20px;
+    text-align: center;
+    margin-right: 3px;
+}
+
+#kecil .ngok{
+    font-size: 40%;
+    padding: 0 2rem;
+}
+
+#gede .ngok{
+    padding: 10rem 2rem;
+}
+
+/* Colorfull */
+
+.colorfull{
+    padding: 0;
+    padding: auto;
+    /* display: flex; */
+    text-align: center;
+    min-height: 100vw;
+}
+
+.colorfull #backgroundw{
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+}
+
+.colorfull .content2{
+    z-index: 10;
+    position: relative;
+}
+
+.content2 img{
+    width: 65vw;
+}
+
+.cakap{
+    z-index: 20;
+    background-color: white;
+    border: #2D2D2D solid;
+    border-radius: 7px;
+    width: 180px;
+}
+
+#satu,#dua{
+    width: fit-content;
+}
+
+.cakap p{
+    margin: 13px 12px;
+}
+
+.cakap #satu{
+    position: relative;
+    bottom: -40rem;
+}
+
+/* Family */
+
+.family{
+    background: #2D2D2D;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.family .title{
+   font-size: 50px;
+   text-align: center;
+   margin-bottom: 10px;
+
+}
+
+.family p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.family .photo:hover img{
+    opacity: 100%;
+}
+
+.family .photo:hover{
+    transform: scale(1.03);
+    box-shadow: 7px 10px #62D6EF;
+
+}
+
+/* Feedback */
+
+.comment{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.container-fb{
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.feedback{
+    background: white;
+    border: solid #2D2D2D 2px;
+    width: fit-content;
+    height: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 50px 2rem;
+    margin: 30px;
+    transition: ease .5s;
+}
+
+.prof{
+    display: flex;
+}
+
+.descow{
+    color: #2D2D2D;
+    margin-top: 30px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.name{
+    margin-left: 15px;
+}
+
+.feedback p{
+    width: 594px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.feedback:hover{
+    box-shadow: #2D2D2D 10px 10px;
+    transform: scale(1.05);
+}
+
+/* Quotes */
+
+.quotes{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.qt{
+    background-color: white;
+    border: #2D2D2D 2px solid;
+    padding: 3rem 5rem;
+    border-radius: 2rem;
+    margin: 3rem;
+    z-index: 30;
+    transition: ease .3s;
+}
+
+.qt h2{
+    font-weight: 500;
+}
+
+.qt h3{
+    margin-top: 1rem;
+    color: #62D6EF;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+/* Footer */
+
+footer{
+    background-color: #2D2D2D;
+    color: white;
+    padding: 45px 100px;
+}
+
+.atas{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.openingA{
+    font-size: 20px;
+}
+
+.openingA img{
+    width: 5vw;
+}
+
+.firstA{
+    margin-top: 10px;
+}
+
+.secondA{
+    margin-top: 1rem;
+}
+
+.thirdA{
+    font-size: 95%;
+    margin-top: 5rem;
+    width: 300px;
+    font-weight: 300;
+}
+
+.pof h3{
+    margin-bottom: 1.5rem;
+}
+
+.firstB{
+    font-size: 1.5rem;
+}
+
+
+.secondB{
+    display: grid;
+    color: white;
+    transition: 0.5s ease;
+
+}
+
+.sosmed{
+    display: flexbox;
+}
+
+.secondB a{
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+.secondB a:hover{
+    text-decoration: underline;
+    color: #62D6EF;
+}
+
+.A{
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.B{
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.A i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.A p{
+    margin-left: 2px;
+}
+
+.B i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.secondC .firstB{
+    margin-bottom: 10px;
+}
+
+.btn2:hover{
+    background-color: #62D6EF;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #2D2D2D;
+    color: white;
+}
+
+.A:hover,.B:hover{
+    color: #62D6EF;
+    text-decoration: underline;
+}
+
+
+
+
+
